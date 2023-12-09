@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <td>Name</td>
+    <td>Address</td>
+    <td>City</td>
+    <td>PinCode</td>
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{row['name']}}</td>
+        <td>{{row['addr']}}</td>
+        <td>{{row['city']}}</td>
+        <td>{{row['pin']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/">Главная страница</a>
+</body>
+</html>
